@@ -1,7 +1,97 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:TaskApp" x:Class="TaskApp.MainPage">
-    <StackLayout>
+     <StackLayout BackgroundColor="Blue">
         <!-- Place new controls here -->
-        <Label Text="Welcome to Xamarin.Forms!" HorizontalOptions="Center" VerticalOptions="CenterAndExpand" />
+        <Label Text="INTERNATIONAL TRAVEL DOCUMENT REQUIREMENTS" HorizontalOptions="Center" Margin="15" TextColor="White"/>
+        
+        <Label Text="Below is the Tab implementation" HorizontalOptions="Center" Margin="15" TextColor="White"/>
+        
+        <Grid x:Name="TransitGridView" Margin="15" HorizontalOptions="Center" RowSpacing="5" VerticalOptions="StartAndExpand" HeightRequest="140">
+          <!--dynamically child addeing code need to be implemented on cs file-->
+        </Grid>
+        <ScrollView>
+            <RelativeLayout>
+               
+                <StackLayout Margin="15,0,15,15" Padding="15" IsVisible="{Binding IsTab1Visible}">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Transit1: " TextColor="White"></Label>
+                        <Label Text="NRT (NARITA, JAPAN)" Font="Bold" TextColor="White"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,0,0,15">
+                        <Label Text="Document Sufficient 1: " TextColor="White"></Label>
+                        <Label Text="NO" Font="Bold" TextColor="White"></Label>
+                    </StackLayout>
+                    
+                    <Label Text="PASSPORT - 1" Font="Bold" TextColor="White"></Label>
+                    <Label Text="Required" TextColor="White"></Label>
+                    
+                    <Label Text="Document Validity - 1" Font="Bold" Margin="0,15,0,0" TextColor="White"></Label>
+                    <Label Text="Passport and other documents accepted for entity must be valid for a min of 3 months beyod the period" TextColor="White"></Label>
+                    
+                    <Label Text="Warning - 1" Font="Bold" Margin="0,15,0,0" TextColor="White"></Label>
+                    <Label Text="Passenger with a non-machine readable" TextColor="White"></Label>
+                </StackLayout>
+                
+                <StackLayout Margin="15" Padding="15" IsVisible="{Binding IsTab2Visible}">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Transit2: " TextColor="White"></Label>
+                        <Label Text="NRT (NARITA, JAPAN)" Font="Bold" TextColor="White"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,0,0,15">
+                        <Label Text="Document Sufficient 2: " TextColor="White"></Label>
+                        <Label Text="NO" Font="Bold" TextColor="White"></Label>
+                    </StackLayout>
+                    
+                    <Label Text="PASSPORT - 2" Font="Bold" TextColor="White"></Label>
+                    <Label Text="Required" TextColor="White"></Label>
+                    
+                    <Label Text="Document Validity - 2" Font="Bold" Margin="0,15,0,0" TextColor="White"></Label>
+                    <Label Text="Passport and other documents accepted for entity must be valid for a min of 3 months beyod the period" TextColor="White"></Label>
+                    
+                    <Label Text="Warning - 2" Font="Bold" Margin="0,15,0,0" TextColor="White"></Label>
+                    <Label Text="Passenger with a non-machine readable" TextColor="White"></Label>
+                </StackLayout>
+                
+                <StackLayout Margin="15" Padding="15" IsVisible="{Binding IsTab3Visible}">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Transit3: " TextColor="White"></Label>
+                        <Label Text="NRT (NARITA, JAPAN)" Font="Bold" TextColor="White"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,0,0,15">
+                        <Label Text="Document Sufficient 3: " TextColor="White"></Label>
+                        <Label Text="NO" Font="Bold" TextColor="White"></Label>
+                    </StackLayout>
+                    
+                    <Label Text="PASSPORT - 3" Font="Bold" TextColor="White"></Label>
+                    <Label Text="Required" TextColor="White"></Label>
+                    
+                    <Label Text="Document Validity - 3" Font="Bold" Margin="0,15,0,0" TextColor="White"></Label>
+                    <Label Text="Passport and other documents accepted for entity must be valid for a min of 3 months beyod the period" TextColor="White"></Label>
+                    
+                    <Label Text="Warning - 3" Font="Bold" Margin="0,15,0,0" TextColor="White"></Label>
+                    <Label Text="Passenger with a non-machine readable" TextColor="White"></Label>
+                </StackLayout>
+                
+                <StackLayout Margin="15" Padding="15" IsVisible="{Binding IsTab4Visible}">
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="Transit4: " TextColor="White"></Label>
+                        <Label Text="NRT (NARITA, JAPAN)" Font="Bold" TextColor="White"></Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="0,0,0,15">
+                        <Label Text="Document Sufficient 4: " TextColor="White"></Label>
+                        <Label Text="NO" Font="Bold" TextColor="White"></Label>
+                    </StackLayout>
+                    
+                    <Label Text="PASSPORT - 4" Font="Bold" TextColor="White"></Label>
+                    <Label Text="Required" TextColor="White"></Label>
+                    
+                    <Label Text="Document Validity - 4" Font="Bold" Margin="0,15,0,0" TextColor="White"></Label>
+                    <Label Text="Passport and other documents accepted for entity must be valid for a min of 3 months beyod the period" TextColor="White"></Label>
+                    
+                    <Label Text="Warning - 4" Font="Bold" Margin="0,15,0,0" TextColor="White"></Label>
+                    <Label Text="Passenger with a non-machine readable" TextColor="White"></Label>
+                </StackLayout>
+            </RelativeLayout>
+         </ScrollView>
     </StackLayout>
 </ContentPage>

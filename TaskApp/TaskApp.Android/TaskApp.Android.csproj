@@ -83,6 +83,13 @@
     <AndroidResource Include="Resources\mipmap-xxhdpi\launcher_foreground.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\icon.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\launcher_foreground.png" />
+    <AndroidResource Include="Resources\drawable\airplane.png" />
+    <AndroidResource Include="Resources\drawable\AirportMarker.png" />
+    <AndroidResource Include="Resources\drawable\circle.png" />
+    <AndroidResource Include="Resources\drawable\GreenExclamationIcon.png" />
+    <AndroidResource Include="Resources\drawable\RedExclamationIcon.png" />
+    <AndroidResource Include="Resources\drawable\TabbedLine.png" />
+    <AndroidResource Include="Resources\drawable\YellowExclamationIcon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\drawable\" />
