@@ -6,10 +6,8 @@
         
         <Label Text="Below is the Tab implementation" HorizontalOptions="Center" Margin="15" TextColor="White"/>
         
-        <Grid x:Name="TransitGridView" Margin="15" HorizontalOptions="Center" RowSpacing="5" VerticalOptions="StartAndExpand" HeightRequest="140">
-          <!--dynamically child addeing code need to be implemented on cs file-->
-        </Grid>
-        <ScrollView>
+        <local:TransitTabView ItemsSource="{Binding TransitList}"></local:TransitTabView>
+       <!-- <ScrollView>
             <RelativeLayout>
                
                 <StackLayout Margin="15,0,15,15" Padding="15" IsVisible="{Binding IsTab1Visible}">
@@ -92,6 +90,6 @@
                     <Label Text="Passenger with a non-machine readable" TextColor="White"></Label>
                 </StackLayout>
             </RelativeLayout>
-         </ScrollView>
+         </ScrollView>-->
     </StackLayout>
 </ContentPage>

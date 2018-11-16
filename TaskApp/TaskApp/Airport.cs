@@ -6,7 +6,7 @@ namespace TaskApp
     {
         public string Name { get; set; }
         public string TravelStatus { get; set; }
-        public bool IsDestination { get; set; }
+        public string PlaceType { get; set; }
         private bool _isSelected { get; set; }
         public bool IsSelected
         {
